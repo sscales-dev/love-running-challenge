@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300');
 
 *{
     margin:0;
@@ -7,29 +7,31 @@
 }
 
 body{
-    font-family: Lato;
-    color:#777777;
+    font-family: Lato, sans-serif;
+    color: #3a3a3a;
 }
 
-h2{
-    font-family: Oswald;
+/* headings and logo */
+
+h1, h2{
+    font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color:#555555;
+    color: #252525;
 }
 
 #logo{
-    float: left; 
+    float: left;
     font-size: 280%;
     margin-left: 30px;
 }
- 
+
+/* navigation links */
+
 #menu{
     font-size: 110%;
-    list-style-type: none;
     letter-spacing: 4px;
 }
-
 
 #logo, #menu{
     line-height: 75px;
@@ -37,6 +39,7 @@ h2{
 
 #menu li {
     float: right;
+    list-style-type: none;
     margin-right: 30px;
 }
 
@@ -45,32 +48,35 @@ h2{
     color: inherit;
 }
 
-#menu a:hover {
-    border-bottom: 1px solid #777777;
+#menu a:hover{
+    border-bottom: 1px solid #3a3a3a;
 }
 
 .active{
-     border-bottom: 1px solid #777777;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* Hero image and cover text */
+
+#hero-outer{
+    height:600px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 #hero-image{
     height:600px;
     width: 100%;
     background: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/main-image.png") no-repeat center center;
-  
+
+    /* Animates zoom effect on loading the page */
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
-
 }
 
-#hero-outer{
-    height:600px;
-    width: 100%;
-    overflow:hidden;
-    position: relative;
-}
-
+/* Creates the level of zoom for hero image */
 @keyframes hero-zoom {
     from{
         transform: scale(1);
@@ -98,12 +104,14 @@ h2{
 
     background-color: rgba(241, 109, 107, .7);
 
-    bottom:30px;
-    right: 120px;
+    bottom: 30px;
+    right: 150px;
 
     position: absolute;
 
 }
+
+/* Club ethos */
 
 #club-ethos{
     height: 600px;
@@ -115,74 +123,73 @@ h2{
     float: left;
 }
 
-
-#right-about{
+#right-about {
     padding-top: 30px;
-    width:33%;
+    width: 33%;
     float: right;
 }
 
-#center-about{
+#center-about {
     width: 33%;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-hr{
-    border-top: 1px solid #777777;
+hr {
+    border-top: 1px solid #3a3a3a;
     width: 100%;
     margin: 5px 0;
-    
 }
 
-.left-about-heading{
-    width: 50%;
+.left-about-heading {
+    width: 60%;
     float: right;
     line-height: 20px;
     clear: both;
     margin-bottom: 50px;
 }
 
-.right-about-heading{
-    width:50%;
-    float:left;
+.right-about-heading {
+    width: 60%;
+    float: left;
     line-height: 20px;
     clear: both;
     margin-bottom: 50px;
 }
-
-.right-about-heading h2{
-    text-align: right;
-}
-
 
 .right-about-heading p {
     text-align: right;
 }
 
+.right-about-heading h2 {
+    text-align: right;
+}
 
-#welcome{
+/* Club ethos center image */
+
+#welcome {
     margin: 20px 0;
     text-align: center;
     font-size: 280%;
 }
 
-#circle-container{
+#circle-container {
     width: 300px;
     height: 300px;
-    padding:30px;
+    padding: 30px;
     border-style: solid;
-    border-color:#cccccc;
+    border-color: #cccccc;
     border-width: 1px;
     border-radius: 50%;
-    margin:0 auto;
-
+    margin: 0 auto;
 }
- 
-#circle-cover-bg{
+
+#circle-cover-bg {
     background: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/video-mask.png") no-repeat center center;
-    height:100%;
+    height: 100%;
     border-radius: 50%;
 }
+
+/* Event times */
 
 #times{
     background-image: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/dublin-city.png");
@@ -191,25 +198,25 @@ hr{
     background-position: center;
     width: 100%;
     overflow: hidden;
-
 }
 
-#times div{
-   color: #fafafa;
-   background-color: rgba(0,0,0, .6);
-   width: 19%;
-   height: 300px;
-   float: left;
-   padding: 30px 0 0 10px;
-   text-align: center;
-   margin: 2px;
-
+#times div {
+    color: #fafafa;
+    background-color: rgba(0,0,0, .6);
+    width: 20%;
+    height: 300px;
+    float: left;
+    padding: 30px 0 0 10px;
+    text-align: center;
+    border: 2px solid white;
+    box-sizing: border-box;
 }
 
-
-#times h2{
-    color:#fafafa;
+#times h2 {
+    color: #fafafa;
 }
+
+/* Footer */
 
 footer{
     height: 150px;
@@ -217,19 +224,21 @@ footer{
 
 .social-networks{
     text-align: center;
+
 }
 
-.social-networks li {
-    display:inline;
+.social-networks li{
+    display: inline;
 }
 
-.social-networks i {
+.social-networks i{
     font-size: 160%;
     margin: 1%;
     padding: 5%;
-    color: #777777;
+    color: #3a3a3a;
 }
 
+/* Gallery Photos */
 
 #photo {
     clear: both;
@@ -242,130 +251,144 @@ footer{
     width: 100%;
 }
 
-
-/* form */
+/* Form */
 
 .form-section {
-    clear: both;
+    clear: left;
     background: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/formbg.jpg");
     background-size: cover;
     background-position: center;
     height: 900px;
 }
 
+.signup-form {
+    margin-top: 150px;
+    color: #fff;
+    background-color: rgba(60, 60, 60, 0.6);
+    max-width: 400px;
+    position: absolute;
+    left: 10%;
+    padding: 30px;
+}
 
+.signup-form h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
 
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+}
 
+.text-input:hover {
+    border-color: #f16c6b;
+}
 
+.join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px 15px 32px;
+    text-align: center;
+    font-size: 100%;
+    background-color: #f16c6b;
+    color: #fafafa;
+    display: block;
+}
 
-/*end form*/
+.join-button:hover {
+    background-color: #fafafa;
+    color: #f16c6b;
+}
 
+/* Media queries */
 
-
-@media screen and (max-width: 1393px) {
-
-    #club-ethos {
+/* For large to medium screens sizes from 1200px wide and down */
+@media screen and (max-width: 1200px){
+    #club-ethos{
         width: 65%;
-        height: 1100px;
-        margin: 0 auto; 
+        height: 1200px;
+        margin: 0 auto;
     }
-    
+
     #welcome {
         padding: 30px 0;
         margin-top: 0;
     }
-    
-    #left-about, #right-about{
-        width: 100%;
-        float: left;
+
+    #left-about, #right-about {
+        width:100%;
+        float:left;
         padding: 0;
     }
-    
-    
-    #center-about {
+
+    #center-about{
         clear: both;
         width: 100%;
         float: left;
         padding: 0;
     }
-    
-    #times div{
+
+    #times div {
         width: 100%;
         clear: both;
         height: 150px;
-        border-style: solid;
-        border-bottom-width: 1px;
-        border-bottom-color: #fff;
         padding: 0;
     }
 
     hr {
         display: none;
     }
-    
 }
 
-@media screen and (max-width: 943px) {
-    
-    #menu {
+/* For medium screens sizes from 950px wide and down */
+@media screen and (max-width: 950px){
+
+    #menu{
         clear: left;
         float: left;
-        margin-left: 30px;
+        margin-left: 30px; 
         margin-bottom: 20px;
         line-height: 25px;
     }
 
-    #cover-image {
-        height: 500px;
-        background-size: cover;
-        background-position: center;
-        background: url(../img/form-bg.png) no-repeat;
-
+    #cover-text{
+        left:0px;
     }
 
-    #cover-text {
-        left: 0px;
-    }
-    
-    #club-ethos {
-        width: 90%;
+    #club-ethos{
+        width:90%;
         height: 1200px;
-        margin: 0 auto; 
+        margin: 0 auto;
     }
 
-  
-    .left-about-heading,
-    .right-about-heading {
+    .left-about-heading, .right-about-heading{
         width: inherit;
     }
-    
-    .right-about-heading h2,
-    .left-about-heading h2 {
+
+    .left-about-heading h2, .right-about-heading h2{
         width: 100%;
         text-align: center;
-
     }
 
-    .right-about-heading p,
-    .left-about-heading p {
+    .left-about-heading p, .right-about-heading p{
         text-align: center;
-        padding: 0 20 0 20;
+        padding: 0 20px 0 20px;
     }
-    
+
     #photo{
-        column-count:3;
+        column-count: 3;
     }
-    
-    
-    #form-container {
-        left:0;
-    }
-    
 }
 
-  @media screen and (max-width: 800px) {
-    #photo {
-     column-count:2;
+/* For small screens sizes from 800px wide and down */
+@media screen and (max-width: 800px){
+    #photo{
+        column-count: 2;
     }
-  }
-
+}

@@ -2,7 +2,7 @@
 
 The expected solution to this first challenge should look similar to the image below (a bit simplistic for now, but we'll spruce it up with some CSS in the next challenge).
 
-![image.png](attachment:596080ee-03d0-4874-983f-8f3c2a85fc94:image.png)
+![image.png](/assets/images/lrc1.png)
 
 **Form outer structure**
 
@@ -15,7 +15,7 @@ The expected solution to this first challenge should look similar to the image b
 
 Personal details (fully styled):
 
-![image.png](attachment:b5c69e56-6d7e-43ee-9df0-bec382f0f71d:image.png)
+![image.png](/assets/images/lrc2.png)
 
 **First Name**
 
@@ -48,7 +48,7 @@ Personal details (fully styled):
 
 Running preferences:
 
-![image.png](attachment:42fd5da2-0647-45f2-99a4-a2b20e6ee3f2:image.png)
+![image.png](/assets/images/lrc3.png)
 
 **Road**
 
@@ -80,7 +80,7 @@ Running preferences:
 
 **Form submission button:**
 
-![image.png](attachment:6ee5ae98-8061-4187-96d1-b0c718f77bbc:image.png)
+![image.png](/assets/images/lrc4.png)
 
 Submission button (fully styled):
 
@@ -93,3 +93,94 @@ Submission button (fully styled):
 1. Run your code to test the form submission
 2. Submit your challenge for assessment
 3. Once you have successfully submitted this challenge, copy your code and paste it into the same section provided on the second challenge. You'll then style the HTML created in this challenge
+
+# Love Running: Challenge 2
+
+The finished form should look like this:
+
+![Love Running Signup Form](/assets/images/lrc5.png)
+
+Copy the finished code from **Challenge 1**  and paste it into the **section** created within **signup.html**
+
+**Styling the form:**
+
+- Add a class attribute to your **form** element. The value is: **signup-form**
+- In **index.css** add a corresponding class rule below the **.form-section**. The rule name is **.signup-form**
+
+**Add properties to the rule**
+
+- Add a top margin to push the form down towards the center of the page. The value is: **150 pixels**
+- Set the form text color. The value is: **#fff**
+- To contrast, the form with the page background image set the form background-color. The value is **rgba(60, 60, 60, 0.6)**
+- Set the maximum width for the form. The value is: **400 pixels**
+- To ensure that the form maintains it's structural integrity and positioning across device sizes set its position. The value is: **absolute**
+- Continue the positioning by setting the form at a responsive position from the left edge of the screen. The value is: **10 per cent**
+- Provide all-round padding for the form elements within the form. The value is: **30 pixels**
+
+**Styling the form header:**
+
+- Below the **.signup-form** rule add style rule that targets the form's child header
+
+**Add properties to the rule**
+
+- Make the header text color more visible to the user. The value is: **#fafafa**
+- Set the bottom margin to create some space between the header text and the input fields below. The value is: **20 pixels**
+
+**Styling the text/email input fields**
+
+- Add a class attribute to each of the personal details input elements (i.e. fname, lname, and email). The class name is: **text-input**
+- In style.css add a corresponding class rule. The rule name is **.text-input**
+
+**Add properties to the rule**
+
+- Ensure the form background color is visible inside the input fields by setting the input background color. Use the background property (not background-color). The value is: **transparent**
+- Ensure the input text color can be seen against the form background. The value is: **#fafafa**
+- Set the width for the input fields. The value is: **100%**
+- Set the height of the input fields. The value is: **25 pixels**
+- Set the margins. Use the shorthand syntax. The values are: **Top = 5 pixels , Bottom = 20 pixels**
+- Set the input field border. Use the shorthand syntax. The values are: **Border width = 1 pixel, Border style = solid, Border color = #fafafa**
+- Set the border radius. The value is: **2 pixels**
+
+**Styling the input hover event**
+
+- Reuse the **.text-input** rule and add a **hover** pseudo-class.
+
+**Add properties to the rule**
+
+- Set the border color when a user hovers over the personal details input fields. The value is: **#f16c6b**
+
+**Styling the submit button**
+
+- Add a class attribute to your submit input. The value is: **join-button**
+- In style.css add a corresponding class rule. The rule name is **.join-button**
+
+**Add properties to the rule**
+
+- Create some space between the submit button and the radio buttons above. Set the top margin. The value is: **20 pixels**
+- Set the border radius for the button. The value is: **2 pixels**
+- Set the padding for the button text. Use the shorthand syntax. The values are: **Top = 15 pixels, Right = 32 pixels, Bottom = 15 pixels, Left = 32 pixels**
+- Align the button text. The value is: **center**
+- Set the font size. The value is: **100 percent**
+- Set the background color that is in line with color that appears on the main page The value is: **#f16c6b**
+- Ensure the text can be seen against the background color. Set the text color. The value is: **#fafafa**
+- Position the button below the radio buttons. Let's change the display. The value is: **block**
+
+**Styling the submit hover event**
+
+- Reuse the **.join-button** rule and add a hover pseudo-class.
+
+**Add properties to the rule**
+
+- Set a contrasting background color when a user hovers over the button. The value is: **#fafafa**
+- Set a contrasting text color when a user hovers over the button. The value is: **#f16c6b**
+
+**Adding the Font Awesome Icon**
+
+- Inside **signup.html** add a Font Awesome icon to the form header. The class values are: **fas fa-heartbeat**
+
+**What to do next:**
+
+1. Run your code to test the form submission
+2. Submit your challenge for assessment
+3. Once you have successfully completed this challenge, congratulate yourself on making deep inroads into pure HTML/CSS software development. You are now ready to take your development and design skills to an advanced level.
+4. Explore good design and development ideas using the following sites:https://www.awwwards.com/https://dribbble.com/https://alistapart.com/
